@@ -16,20 +16,40 @@
   <body>
     <!-- HEADER ================================================================== -->
     <header>
-      <div class="container flex">
-        <div class="header__buttons flex">
+      <div class="container flexbox">
+        <div class="header__buttons flexbox">
           <button class="header__button-menu">=</button>
           <button class="header__button-language">EN</button>
         </div>
-        <nav class="header__navigation">
-          <ul class="header__navigation-list list flex">
-            <li>Soulmates</li>
-            <li>Interviews</li>
-            <li>Top 5</li>
-            <li>Confession</li>
-            <li>news</li>
-            <li>video</li>
-            <li>podcasts</li>
+        <nav class="header__navigation flexbox">
+          <ul class="header__navigation-list list flexbox">
+            <li class="header__navigation-list-item">
+              <a href="index.html">Soulmates</a>
+            </li>
+
+            <li class="header__navigation-list-item">
+              <a href="index.html">Interviews</a>
+            </li>
+
+            <li class="header__navigation-list-item">
+              <a href="index.html">Top 5</a>
+            </li>
+
+            <li class="header__navigation-list-item">
+              <a href="index.html">Confession</a>
+            </li>
+
+            <li class="header__navigation-list-item">
+              <a href="index.html">news</a>
+            </li>
+
+            <li class="header__navigation-list-item">
+              <a href="index.html">video</a>
+            </li>
+
+            <li class="header__navigation-list-item">
+              <a href="index.html">podcasts</a>
+            </li>
           </ul>
         </nav>
         <input class="header__input-search" type="text" />
@@ -39,11 +59,35 @@
     <!-- MAIN ================================================================== -->
     <main>
       <div class="container">
-        <div class="main__hero">
+        <section class="main__hero">
           <svg class="main__hero-title-svg">
             <use href="./IMAGES/main/SVG/sprite.svg#Aught"></use>
           </svg>
-        </div>
+          <ul class="main__hero-socials-list list">
+            <li class="main__hero-socials-list-item flexbox">
+              <a href="*">FB</a>
+            </li>
+            <li class="main__hero-socials-list-item flexbox">
+              <a href="*">TW</a>
+            </li>
+            <li class="main__hero-socials-list-item flexbox">
+              <a href="*">SC</a>
+            </li>
+            <li class="main__hero-socials-list-item flexbox">
+              <a href="*">YT</a>
+            </li>
+            <li class="main__hero-socials-list-item flexbox">
+              <a href="*">IN</a>
+            </li>
+          </ul>
+          <div class="main__hero-text_1">
+            <p class="main__hero-text_1_1">
+              In coversation with Roman Komogortsev (guitar/synth) and Pavel
+              Kozlov (bass/synth) A Belarusian new wave band from Minsk
+            </p>
+            <p class="main__hero-text_1_2">24 june (2021)</p>
+          </div>
+        </section>
       </div>
     </main>
 

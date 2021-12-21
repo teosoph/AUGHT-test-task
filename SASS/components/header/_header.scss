@@ -11,17 +11,30 @@ header {
     position: relative;
     justify-content: space-between;
   }
+  .header__buttons {
+    .header__button-menu {
+      margin-left: 31px;
+    }
+    .header__button-language {
+      margin-left: 40px;
+    }
+  }
+  .header__navigation {
+    align-items: center;
+  }
+  .header__navigation-list-item {
+    display: inline;
+    margin-right: 48px;
+  }
+  .header__navigation-list-item:last-child {
+    margin-right: 0px;
+  }
 
-  .header__button-menu {
-    margin-left: 31px;
-  }
-  .header__button-language {
-    margin-left: 40px;
-  }
-  .header__navigation-list {
+  .header__navigation-list-item a {
     height: 100%;
 
     align-items: center;
+    justify-content: center;
     margin: 0;
 
     font-family: "Gramatika-Light";
@@ -34,13 +47,5 @@ header {
     text-transform: uppercase;
 
     color: rgb(255, 255, 255);
-
-    li {
-      display: inline;
-      margin-right: 48px;
-    }
-    li:last-child {
-      margin-right: 0px;
-    }
   }
 }

@@ -9,20 +9,29 @@ body {
 }
 
 body {
-  background-color: #000000;
+  background-color: black;
   z-index: 1;
+}
+
+section {
+  border: 2px solid #70f915;
 }
 
 a {
   text-decoration: none;
+  border: 2px solid #15def9;
 }
 
 ul {
-  border: 2px solid #bd9b07;
+  border: 2px solid #680b66;
 }
 
 li {
   border: 2px solid red;
+}
+
+p {
+  border: 2px solid #fffb00;
 }
 
 .list {
@@ -30,13 +39,19 @@ li {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  border: 2px solid #00ff80;
+  border: 2px solid #0003c2;
 }
 
-.flex {
+.flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header {
@@ -55,19 +70,37 @@ header .container {
           justify-content: space-between;
 }
 
-header .header__button-menu {
+header .header__buttons .header__button-menu {
   margin-left: 31px;
 }
 
-header .header__button-language {
+header .header__buttons .header__button-language {
   margin-left: 40px;
 }
 
-header .header__navigation-list {
+header .header__navigation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__navigation-list-item {
+  display: inline;
+  margin-right: 48px;
+}
+
+header .header__navigation-list-item:last-child {
+  margin-right: 0px;
+}
+
+header .header__navigation-list-item a {
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   font-family: "Gramatika-Light";
   font-style: normal;
@@ -79,15 +112,6 @@ header .header__navigation-list {
   color: white;
 }
 
-header .header__navigation-list li {
-  display: inline;
-  margin-right: 48px;
-}
-
-header .header__navigation-list li:last-child {
-  margin-right: 0px;
-}
-
 .main__hero {
   height: 1100px;
   background-image: url(../../../IMAGES/main/IMG/image-1.jpg);
@@ -97,7 +121,6 @@ header .header__navigation-list li:last-child {
 }
 
 .main__hero .main__hero-title-svg {
-  /* Aught */
   width: 926px;
   height: 235.6px;
   display: block;
@@ -108,12 +131,60 @@ header .header__navigation-list li:last-child {
   border: 2px solid #ff2d6c;
 }
 
+.main__hero .main__hero-socials-list {
+  width: 40px;
+  position: absolute;
+  top: 356px;
+  left: 32px;
+}
+
+.main__hero .main__hero-socials-list-item {
+  margin-bottom: 72px;
+}
+
+.main__hero .main__hero-socials-list-item a {
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main__hero .main__hero-text_1 {
+  font-family: "Gramatika-Light";
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  color: white;
+}
+
+.main__hero .main__hero-text_1_1 {
+  position: absolute;
+  top: 562px;
+  left: 264px;
+  width: 216px;
+  height: 85px;
+  font-style: italic;
+  text-indent: 1.6em;
+}
+
+.main__hero .main__hero-text_1_2 {
+  position: absolute;
+  top: 695px;
+  left: 264px;
+  width: auto;
+  height: 17px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
-  right: 0;
   border: 5px solid green;
 }
 
