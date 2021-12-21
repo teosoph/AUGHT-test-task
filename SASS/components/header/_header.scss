@@ -1,0 +1,46 @@
+header {
+  height: 57px;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 5;
+
+  .container {
+    height: 100%;
+
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .header__button-menu {
+    margin-left: 31px;
+  }
+  .header__button-language {
+    margin-left: 40px;
+  }
+  .header__navigation-list {
+    height: 100%;
+
+    align-items: center;
+    margin: 0;
+
+    font-family: "Gramatika-Light";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: rgb(255, 255, 255);
+
+    li {
+      display: inline;
+      margin-right: 48px;
+    }
+    li:last-child {
+      margin-right: 0px;
+    }
+  }
+}

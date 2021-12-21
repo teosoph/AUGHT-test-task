@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  left: 0;
+  right: 0;
+
+  border: 5px solid green;
+
+  // @include for-size(mobile) {
+  //   width: 320px;
+  // }
+
+  // @include for-size(tablet) {
+  //   width: 768px;
+  // }
+
+  // @include for-size(desktop) {
+  //   width: 1200px;
+  // }
+}
