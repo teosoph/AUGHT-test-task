@@ -8,11 +8,9 @@ body {
   margin: 0;
   margin-left: 0;
   margin-right: 0;
-}
-
-body {
   background-color: black;
-  z-index: 1;
+  width: 5775px;
+  height: 1440px;
 }
 
 section {
@@ -30,6 +28,10 @@ ul {
 
 li {
   border: 2px solid red;
+}
+
+p {
+  border: 2px solid #fffb00;
 }
 
 .list {
@@ -60,12 +62,10 @@ header {
   height: 57px;
   left: 0;
   right: 0;
-  position: relative;
 }
 
 header .container {
   height: 100%;
-  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -277,11 +277,12 @@ header .header__navigation-list-item a {
 }
 
 .main__info {
-  height: 1672px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
 }
 
@@ -300,48 +301,40 @@ header .header__navigation-list-item a {
   color: #0f0d0d;
 }
 
-.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 {
-  border: 3px solid lawngreen;
-  width: 541px;
-  height: 795px;
-  font-weight: normal;
-  color: #000000;
-}
-
-.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-date {
-  margin: 8px 0 0 0;
+.main__info .main__info-selebrities {
   font-family: "Gramatika-Light";
+  font-weight: normal;
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #000000;
+}
+
+.main__info .main__info-selebrities .main__info-selebrities-card-date {
+  margin: 8px 0 0 0;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-name {
+.main__info .main__info-selebrities .main__info-selebrities-card-name {
   margin: 24px 0 0 0;
   font-family: "Kudryashev Headline";
-  font-style: normal;
   font-size: 24px;
   line-height: 27px;
 }
 
-.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-text {
+.main__info .main__info-selebrities .main__info-selebrities-card-text {
   margin: 10px 0 0 0;
-  font-family: "Gramatika-Light";
   font-style: italic;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
   letter-spacing: 0.06em;
 }
 
-.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-buttons {
+.main__info .main__info-selebrities .main__info-selebrities-cards-buttons {
   margin: 20px 0 0 0;
 }
 
-.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-buttons .main__info-selebrity-card_1-button_1,
-.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-buttons .main__info-selebrity-card_1-button_2 {
+.main__info .main__info-selebrities .main__info-selebrities-cards-buttons .main__info-selebrities-cards-button_1,
+.main__info .main__info-selebrities .main__info-selebrities-cards-buttons .main__info-selebrities-cards-button_2 {
   border-radius: 28px;
   background-color: white;
   font-family: "Gramatika-Light";
@@ -350,6 +343,102 @@ header .header__navigation-list-item a {
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
+}
+
+.main__info .main__info-selebrities .main__info-selebrities-cards_1 {
+  width: 1440px;
+  height: 1680px;
+  border: 3px solid #b32626;
+}
+
+.main__info .main__info-selebrities .main__info-selebrities-cards_1 .main__info-selebrities-card_1 {
+  border: 3px solid lawngreen;
+  width: 541px;
+  height: 795px;
+}
+
+.main__info .main__info-selebrities .main__info-selebrities-cards_1 .main__info-selebrities-card_2,
+.main__info .main__info-selebrities .main__info-selebrities-cards_1 .main__info-selebrities-card_3,
+.main__info .main__info-selebrities .main__info-selebrities-cards_1 .main__info-selebrities-card_4,
+.main__info .main__info-selebrities .main__info-selebrities-cards_1 .main__info-selebrities-card_5,
+.main__info .main__info-selebrities .main__info-selebrities-cards_1 .main__info-selebrities-card_6 {
+  border: 3px solid lawngreen;
+  width: 263px;
+  height: 486px;
+}
+
+.main__info .main__info-selebrities .main__hero_2 {
+  width: 1440px;
+  height: 744px;
+  background-image: url(../../../IMAGES/main/IMG/irina.jpg);
+  border: 3px solid #e2c627;
+}
+
+.main__info .main__info-selebrities .main__info-selebrities-cards_2 {
+  width: 1440px;
+  height: 1680px;
+  border: 3px solid #b32626;
+}
+
+.main__info .main__info-selebrities .main__info-selebrities-cards_2 .main__info-selebrities-card_7,
+.main__info .main__info-selebrities .main__info-selebrities-cards_2 .main__info-selebrities-card_8,
+.main__info .main__info-selebrities .main__info-selebrities-cards_2 .main__info-selebrities-card_10,
+.main__info .main__info-selebrities .main__info-selebrities-cards_2 .main__info-selebrities-card_11,
+.main__info .main__info-selebrities .main__info-selebrities-cards_2 .main__info-selebrities-card_12 {
+  border: 3px solid lawngreen;
+  width: 263px;
+  height: 486px;
+}
+
+.main__info .main__info-selebrities .main__info-selebrities-cards_2 .main__info-selebrities-card_9 {
+  border: 3px solid lawngreen;
+  width: 541px;
+  height: 795px;
+}
+
+.main__info .main__hero_2 {
+  color: white;
+}
+
+.main__info .main__hero_2 .main__hero_2-text_1 {
+  display: inline-block;
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 83px;
+}
+
+.main__info .main__hero_2 .main__hero_2-text_2 {
+  display: inline-block;
+  text-align: right;
+  width: 417px;
+  height: 166px;
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 83px;
+}
+
+.main__info .main__hero_2 .main__hero_2-text_3 {
+  display: inline-block;
+  width: 258px;
+  height: 101px;
+  font-family: "Gramatika-Light";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+}
+
+.main__info .main__hero_2 .main__hero_2-text_4 {
+  display: inline-block;
+}
+
+.main__info .main__hero_2 .main__hero_2-text_5 {
+  display: inline-block;
 }
 
 .container {

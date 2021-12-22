@@ -1,7 +1,10 @@
 .main__info {
-  height: 1672px;
+  // width: 1440px;
 
   flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: rgb(255, 255, 255);
 
@@ -22,66 +25,151 @@
 
     color: rgb(15, 13, 13);
   }
+  .main__info-selebrities {
+    font-family: "Gramatika-Light";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
 
-  .main__info-selebrity-cards {
-    .main__info-selebrity-card_1 {
-      border: 3px solid rgb(124, 252, 0);
+    color: #000000;
 
-      width: 541px;
-      height: 795px;
+    .main__info-selebrities-card-date {
+      margin: 8px 0 0 0;
 
-      font-weight: normal;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .main__info-selebrities-card-name {
+      margin: 24px 0 0 0;
 
-      color: #000000;
+      font-family: "Kudryashev Headline";
+      font-size: 24px;
+      line-height: 27px;
+    }
+    .main__info-selebrities-card-text {
+      margin: 10px 0 0 0;
 
-      // .main__info-selebrity-card_1-foto {
-      // }
-      .main__info-selebrity-card_1-date {
-        margin: 8px 0 0 0;
+      font-style: italic;
+      letter-spacing: 0.06em;
+    }
+    .main__info-selebrities-cards-buttons {
+      margin: 20px 0 0 0;
+
+      .main__info-selebrities-cards-button_1,
+      .main__info-selebrities-cards-button_2 {
+        border-radius: 28px;
+        background-color: rgb(255, 255, 255);
 
         font-family: "Gramatika-Light";
         font-style: normal;
-        font-size: 14px;
-        line-height: 17px;
-
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-      .main__info-selebrity-card_1-name {
-        margin: 24px 0 0 0;
-
-        font-family: "Kudryashev Headline";
-        font-style: normal;
-        font-size: 24px;
-        line-height: 27px;
-      }
-      .main__info-selebrity-card_1-text {
-        margin: 10px 0 0 0;
-
-        font-family: "Gramatika-Light";
-        font-style: italic;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        letter-spacing: 0.06em;
+
+        text-transform: uppercase;
       }
-      .main__info-selebrity-card_1-buttons {
-        margin: 20px 0 0 0;
+    }
 
-        .main__info-selebrity-card_1-button_1,
-        .main__info-selebrity-card_1-button_2 {
-          border-radius: 28px;
-          background-color: rgb(255, 255, 255);
+    .main__info-selebrities-cards_1 {
+      width: 1440px;
+      height: 1680px;
 
-          font-family: "Gramatika-Light";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 17px;
+      border: 3px solid rgb(179, 38, 38);
 
-          text-transform: uppercase;
-        }
+      .main__info-selebrities-card_1 {
+        border: 3px solid rgb(124, 252, 0);
+
+        width: 541px;
+        height: 795px;
       }
+      .main__info-selebrities-card_2,
+      .main__info-selebrities-card_3,
+      .main__info-selebrities-card_4,
+      .main__info-selebrities-card_5,
+      .main__info-selebrities-card_6 {
+        border: 3px solid rgb(124, 252, 0);
+
+        width: 263px;
+        height: 486px;
+      }
+    }
+    .main__hero_2 {
+      width: 1440px;
+      height: 744px;
+
+      background-image: url(../../../IMAGES/main/IMG/irina.jpg);
+
+      border: 3px solid rgb(226, 198, 39);
+    }
+    .main__info-selebrities-cards_2 {
+      width: 1440px;
+      height: 1680px;
+
+      border: 3px solid rgb(179, 38, 38);
+
+      .main__info-selebrities-card_7,
+      .main__info-selebrities-card_8,
+      .main__info-selebrities-card_10,
+      .main__info-selebrities-card_11,
+      .main__info-selebrities-card_12 {
+        border: 3px solid rgb(124, 252, 0);
+
+        width: 263px;
+        height: 486px;
+      }
+      .main__info-selebrities-card_9 {
+        border: 3px solid rgb(124, 252, 0);
+
+        width: 541px;
+        height: 795px;
+      }
+    }
+  }
+  .main__hero_2 {
+    color: rgb(255, 255, 255);
+
+    .main__hero_2-text_1 {
+      display: inline-block;
+
+      font-family: "Kudryashev Headline";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 80px;
+      line-height: 83px;
+    }
+    .main__hero_2-text_2 {
+      display: inline-block;
+      text-align: right;
+
+      width: 417px;
+      height: 166px;
+
+      font-family: "Kudryashev Headline";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 80px;
+      line-height: 83px;
+    }
+    .main__hero_2-text_3 {
+      display: inline-block;
+
+      width: 258px;
+      height: 101px;
+
+      font-family: "Gramatika-Light";
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 0.06em;
+    }
+    .main__hero_2-text_4 {
+      display: inline-block;
+    }
+    .main__hero_2-text_5 {
+      display: inline-block;
     }
   }
 }
