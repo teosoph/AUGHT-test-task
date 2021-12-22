@@ -1,0 +1,190 @@
+//   Main Hero =========================
+.main__hero {
+  height: 1100px;
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(../../../IMAGES/main/IMG/image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  border: 2px solid rgb(255, 199, 78);
+
+  //   Main Hero Title "Aught" =========================
+  .main__hero-title-svg {
+    position: relative;
+    top: 90.77px;
+
+    width: 926px;
+    height: 235.6px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: rgb(255, 255, 255);
+
+    border: 2px solid rgb(255, 45, 108);
+  }
+
+  //    Main Hero Social List =========================
+  .main__hero-socials-list {
+    width: 40px;
+
+    position: absolute;
+    top: 356px;
+    left: 32px;
+  }
+  .main__hero-socials-list-item {
+    margin-bottom: 72px;
+  }
+  .main__hero-socials-list-item a {
+    font-family: "Gramatika-Light";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+
+  //   Main Hero Texts
+  .main__hero-texts {
+    border: 5px solid rgb(107, 0, 0);
+
+    //   Main Hero Text-1
+    .main__hero-text_1 {
+      font-family: "Gramatika-Light";
+      font-size: 14px;
+      line-height: 120%;
+      font-weight: normal;
+      letter-spacing: 0.06em;
+
+      color: rgb(255, 255, 255);
+    }
+    .main__hero-text_1_1 {
+      position: absolute;
+      top: 562px;
+      left: 264px;
+
+      width: 216px;
+      height: 85px;
+
+      font-style: italic;
+      text-indent: 1.6em;
+    }
+    .main__hero-text_1_2 {
+      position: absolute;
+      top: 695px;
+      left: 264px;
+
+      width: auto;
+      height: 17px;
+
+      font-style: normal;
+      text-transform: uppercase;
+    }
+    //   Main Hero Text-2
+    .main__hero-text_2 {
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+    .main__hero-text_2_1 {
+      position: absolute;
+      left: 727px;
+      top: 423px;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+
+      width: 681px;
+      height: 172px;
+
+      font-family: "Kudryashev Headline";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 80px;
+      line-height: 104%;
+
+      color: rgb(255, 255, 255);
+    }
+
+    //  Main Hero Pagination
+    .main__hero-pagination {
+      position: absolute;
+
+      width: 13px;
+      height: 17px;
+      left: 1259px;
+      top: 691px;
+
+      a {
+        display: flex;
+        margin-right: 30px;
+        font-family: "Gramatika-Light";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 120%;
+
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        color: rgb(255, 255, 255);
+      }
+    }
+    .main__hero-pagination-active-page::after {
+      content: url("../../../IMAGES/main/SVG/sprite.svg#Rect-1");
+      content: url("../../../IMAGES/main/SVG/sprite.svg#Rect-2");
+
+      color: rgb(255, 255, 255);
+    }
+
+    //   Main Hero Text-3
+    .main__hero-text_3 {
+      position: absolute;
+      width: 220px;
+      height: 17px;
+      left: 264px;
+      top: 987px;
+
+      font-family: "Gramatika-Light";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 120%;
+
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .main__hero-mark {
+    display: block;
+    border-radius: 50px 50px;
+
+    width: 84px;
+    height: 84px;
+
+    position: absolute;
+    left: 27px;
+    top: 1030px;
+
+    font-family: "Gramatika-Light";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #0f0d0d;
+    background-color: rgb(255, 255, 255);
+  }
+}

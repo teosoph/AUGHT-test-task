@@ -6,6 +6,8 @@
 html,
 body {
   margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 body {
@@ -30,10 +32,6 @@ li {
   border: 2px solid red;
 }
 
-p {
-  border: 2px solid #fffb00;
-}
-
 .list {
   list-style: none;
   margin-top: 0;
@@ -46,20 +44,23 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.link {
+  text-decoration: none;
 }
 
 header {
   height: 57px;
   left: 0;
   right: 0;
-  position: fixed;
-  z-index: 5;
+  position: relative;
 }
 
 header .container {
@@ -114,6 +115,9 @@ header .header__navigation-list-item a {
 
 .main__hero {
   height: 1100px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../../../IMAGES/main/IMG/image-1.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -121,10 +125,11 @@ header .header__navigation-list-item a {
 }
 
 .main__hero .main__hero-title-svg {
+  position: relative;
+  top: 90.77px;
   width: 926px;
   height: 235.6px;
   display: block;
-  margin-top: 90.77px;
   margin-left: auto;
   margin-right: auto;
   color: white;
@@ -153,7 +158,11 @@ header .header__navigation-list-item a {
   color: white;
 }
 
-.main__hero .main__hero-text_1 {
+.main__hero .main__hero-texts {
+  border: 5px solid #6b0000;
+}
+
+.main__hero .main__hero-texts .main__hero-text_1 {
   font-family: "Gramatika-Light";
   font-size: 14px;
   line-height: 120%;
@@ -162,7 +171,7 @@ header .header__navigation-list-item a {
   color: white;
 }
 
-.main__hero .main__hero-text_1_1 {
+.main__hero .main__hero-texts .main__hero-text_1_1 {
   position: absolute;
   top: 562px;
   left: 264px;
@@ -172,7 +181,7 @@ header .header__navigation-list-item a {
   text-indent: 1.6em;
 }
 
-.main__hero .main__hero-text_1_2 {
+.main__hero .main__hero-texts .main__hero-text_1_2 {
   position: absolute;
   top: 695px;
   left: 264px;
@@ -182,10 +191,172 @@ header .header__navigation-list-item a {
   text-transform: uppercase;
 }
 
+.main__hero .main__hero-texts .main__hero-text_2 {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.main__hero .main__hero-texts .main__hero-text_2_1 {
+  position: absolute;
+  left: 727px;
+  top: 423px;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  width: 681px;
+  height: 172px;
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 104%;
+  color: white;
+}
+
+.main__hero .main__hero-texts .main__hero-pagination {
+  position: absolute;
+  width: 13px;
+  height: 17px;
+  left: 1259px;
+  top: 691px;
+}
+
+.main__hero .main__hero-texts .main__hero-pagination a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main__hero .main__hero-texts .main__hero-pagination-active-page::after {
+  content: url("../../../IMAGES/main/SVG/sprite.svg#Rect-1");
+  content: url("../../../IMAGES/main/SVG/sprite.svg#Rect-2");
+  color: white;
+}
+
+.main__hero .main__hero-texts .main__hero-text_3 {
+  position: absolute;
+  width: 220px;
+  height: 17px;
+  left: 264px;
+  top: 987px;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main__hero .main__hero-mark {
+  display: block;
+  border-radius: 50px 50px;
+  width: 84px;
+  height: 84px;
+  position: absolute;
+  left: 27px;
+  top: 1030px;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0f0d0d;
+  background-color: white;
+}
+
+.main__info {
+  height: 1672px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.main__info .main__info-text_1 {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  height: 27px;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 15em;
+  text-transform: uppercase;
+  color: #0f0d0d;
+}
+
+.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 {
+  border: 3px solid lawngreen;
+  width: 541px;
+  height: 795px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-date {
+  margin: 8px 0 0 0;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-name {
+  margin: 24px 0 0 0;
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-text {
+  margin: 10px 0 0 0;
+  font-family: "Gramatika-Light";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+}
+
+.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-buttons {
+  margin: 20px 0 0 0;
+}
+
+.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-buttons .main__info-selebrity-card_1-button_1,
+.main__info .main__info-selebrity-cards .main__info-selebrity-card_1 .main__info-selebrity-card_1-buttons .main__info-selebrity-card_1-button_2 {
+  border-radius: 28px;
+  background-color: white;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   border: 5px solid green;
+  width: 100%;
 }
 
 @font-face {

@@ -5,6 +5,8 @@
 html,
 body {
   margin: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 body {
@@ -29,7 +31,7 @@ li {
   border: 2px solid hsl(0, 100%, 50%);
 }
 p {
-  border: 2px solid hsl(59, 100%, 50%);
+  // border: 2px solid hsl(59, 100%, 50%);
 }
 
 .list {
@@ -45,4 +47,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.link {
+  text-decoration: none;
 }

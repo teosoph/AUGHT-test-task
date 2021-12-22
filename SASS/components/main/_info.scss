@@ -1,0 +1,87 @@
+.main__info {
+  height: 1672px;
+
+  flex-direction: column;
+
+  background-color: rgb(255, 255, 255);
+
+  .main__info-text_1 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    height: 27px;
+
+    font-family: "Gramatika-Light";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 15em;
+    text-transform: uppercase;
+
+    color: rgb(15, 13, 13);
+  }
+
+  .main__info-selebrity-cards {
+    .main__info-selebrity-card_1 {
+      border: 3px solid rgb(124, 252, 0);
+
+      width: 541px;
+      height: 795px;
+
+      font-weight: normal;
+
+      color: #000000;
+
+      // .main__info-selebrity-card_1-foto {
+      // }
+      .main__info-selebrity-card_1-date {
+        margin: 8px 0 0 0;
+
+        font-family: "Gramatika-Light";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 17px;
+
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .main__info-selebrity-card_1-name {
+        margin: 24px 0 0 0;
+
+        font-family: "Kudryashev Headline";
+        font-style: normal;
+        font-size: 24px;
+        line-height: 27px;
+      }
+      .main__info-selebrity-card_1-text {
+        margin: 10px 0 0 0;
+
+        font-family: "Gramatika-Light";
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+      }
+      .main__info-selebrity-card_1-buttons {
+        margin: 20px 0 0 0;
+
+        .main__info-selebrity-card_1-button_1,
+        .main__info-selebrity-card_1-button_2 {
+          border-radius: 28px;
+          background-color: rgb(255, 255, 255);
+
+          font-family: "Gramatika-Light";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
