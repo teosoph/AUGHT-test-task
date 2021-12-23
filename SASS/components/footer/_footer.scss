@@ -1,0 +1,59 @@
+footer {
+  background-color: rgb(255, 255, 255);
+  .container {
+    flex-direction: column;
+    section {
+      width: 1440px;
+      height: 602px;
+
+      background-color: rgb(255, 255, 255);
+
+      border: 32px solid rgb(0, 0, 0);
+
+      .footer__title-svg {
+        width: 407px;
+        height: 101px;
+
+        color: rgb(0, 0, 0);
+      }
+
+      .footer__menu {
+        width: 300px;
+
+        .footer__menu-list {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .footer__menu-list-item {
+            justify-content: center;
+            align-items: center;
+
+            border-bottom: 2px solid rgb(198, 24, 24);
+            // flex: 1 0 25%;
+            padding: 10px;
+          }
+        }
+      }
+    }
+    .footer__text_1 {
+      display: inline-block;
+      text-align: center;
+
+      width: 1440px;
+      height: 25px;
+
+      font-family: "Gramatika-Light";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 7em;
+      text-transform: uppercase;
+
+      background-color: black;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
