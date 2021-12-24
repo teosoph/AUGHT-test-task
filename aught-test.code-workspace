@@ -1,8 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "AUGHT-test-task",
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
 }

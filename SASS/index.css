@@ -8,30 +8,10 @@ body {
   margin: 0;
   margin-left: 0;
   margin-right: 0;
-  background-color: black;
-  width: 5775px;
-  height: 1440px;
-}
-
-section {
-  border: 2px solid #70f915;
 }
 
 a {
   text-decoration: none;
-  border: 2px solid #15def9;
-}
-
-ul {
-  border: 2px solid #680b66;
-}
-
-li {
-  border: 2px solid red;
-}
-
-p {
-  border: 2px solid #fffb00;
 }
 
 .list {
@@ -39,7 +19,6 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  border: 2px solid #0003c2;
 }
 
 .flexbox {
@@ -60,8 +39,10 @@ p {
 
 header {
   height: 57px;
+  position: absolute;
   left: 0;
   right: 0;
+  z-index: 9;
 }
 
 header .container {
@@ -72,11 +53,50 @@ header .container {
 }
 
 header .header__buttons .header__button-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: Transparent;
+  overflow: hidden;
+  cursor: pointer;
   margin-left: 31px;
+  width: 40px;
+  height: 10px;
 }
 
 header .header__buttons .header__button-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: Transparent;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
   margin-left: 40px;
+}
+
+header .header__buttons .header__button-language::after {
+  content: "  ";
+  display: block;
+  background-image: url("../../../IMAGES/main/SVG/CaretDown.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  fill: white;
 }
 
 header .header__navigation {
@@ -85,16 +105,16 @@ header .header__navigation {
           align-items: center;
 }
 
-header .header__navigation-list-item {
+header .header__navigation .header__navigation-list-item {
   display: inline;
   margin-right: 48px;
 }
 
-header .header__navigation-list-item:last-child {
+header .header__navigation .header__navigation-list-item:last-child {
   margin-right: 0px;
 }
 
-header .header__navigation-list-item a {
+header .header__navigation .header__navigation-list-item a {
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -113,6 +133,73 @@ header .header__navigation-list-item a {
   color: white;
 }
 
+header .header__input-search {
+  background-color: transparent;
+  border: 0;
+  margin-right: 32px;
+}
+
+header .header__input-search::-webkit-input-placeholder {
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+header .header__input-search:-ms-input-placeholder {
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+header .header__input-search::-ms-input-placeholder {
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+header .header__input-search::placeholder {
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+
+header .header__input-search::after {
+  content: "  ";
+  display: block;
+  background-image: url("../../../IMAGES/main/SVG/zoomOut.svg");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+  fill: white;
+}
+
+header .header__input-search-svg {
+  fill: white;
+  border: 3px solid red;
+  width: 50px;
+  height: 50px;
+}
+
 .main__hero {
   height: 1100px;
   position: relative;
@@ -121,7 +208,7 @@ header .header__navigation-list-item a {
   background-image: url(../../../IMAGES/main/IMG/image-1.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  border: 2px solid #ffc74e;
+  background-size: contain;
 }
 
 .main__hero .main__hero-title-svg {
@@ -132,8 +219,7 @@ header .header__navigation-list-item a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  color: white;
-  border: 2px solid #ff2d6c;
+  fill: white;
 }
 
 .main__hero .main__hero-socials-list {
@@ -156,10 +242,6 @@ header .header__navigation-list-item a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: white;
-}
-
-.main__hero .main__hero-texts {
-  border: 5px solid #6b0000;
 }
 
 .main__hero .main__hero-texts .main__hero-text_1 {
@@ -198,12 +280,10 @@ header .header__navigation-list-item a {
 
 .main__hero .main__hero-texts .main__hero-text_2_1 {
   position: absolute;
-  left: 727px;
-  top: 423px;
+  right: 20px;
+  margin-top: 150px;
   padding-left: 1.5em;
   text-indent: -1.5em;
-  width: 681px;
-  height: 172px;
   font-family: "Kudryashev Headline";
   font-style: normal;
   font-weight: normal;
@@ -216,7 +296,7 @@ header .header__navigation-list-item a {
   position: absolute;
   width: 13px;
   height: 17px;
-  left: 1259px;
+  right: 0;
   top: 691px;
 }
 
@@ -224,7 +304,6 @@ header .header__navigation-list-item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 30px;
   font-family: "Gramatika-Light";
   font-style: normal;
   font-weight: normal;
@@ -264,7 +343,7 @@ header .header__navigation-list-item a {
   height: 84px;
   position: absolute;
   left: 27px;
-  top: 1030px;
+  bottom: 1em;
   font-family: "Gramatika-Light";
   font-style: normal;
   font-weight: normal;
@@ -346,14 +425,12 @@ header .header__navigation-list-item a {
 }
 
 .main__info .main__info-selebrities .main__info-selebrities-cards_1 {
-  width: 1440px;
   height: 1680px;
   border: 3px solid #b32626;
 }
 
 .main__info .main__info-selebrities .main__info-selebrities-cards_1 .main__info-selebrities-card_1 {
   border: 3px solid lawngreen;
-  width: 541px;
   height: 795px;
 }
 
@@ -368,14 +445,16 @@ header .header__navigation-list-item a {
 }
 
 .main__info .main__info-selebrities .main__hero_2 {
-  width: 1440px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 744px;
   background-image: url(../../../IMAGES/main/IMG/irina.jpg);
+  background-repeat: no-repeat;
   border: 3px solid #e2c627;
 }
 
 .main__info .main__info-selebrities .main__info-selebrities-cards_2 {
-  width: 1440px;
   height: 1680px;
   border: 3px solid #b32626;
 }
@@ -441,35 +520,34 @@ header .header__navigation-list-item a {
   display: inline-block;
 }
 
-footer {
-  background-color: white;
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
 }
 
-footer .container {
+.footer .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-footer .container section {
-  width: 1440px;
   height: 602px;
   background-color: white;
   border: 32px solid black;
 }
 
-footer .container section .footer__title-svg {
+.footer .container .footer__title-svg {
   width: 407px;
   height: 101px;
-  color: black;
+  fill: black;
+  border: 2px solid blue;
 }
 
-footer .container section .footer__menu {
+.footer .container .footer__menu {
   width: 300px;
 }
 
-footer .container section .footer__menu .footer__menu-list {
+.footer .container .footer__menu .footer__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,7 +558,7 @@ footer .container section .footer__menu .footer__menu-list {
       flex-wrap: wrap;
 }
 
-footer .container section .footer__menu .footer__menu-list .footer__menu-list-item {
+.footer .container .footer__menu .footer__menu-list .footer__menu-list-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -491,10 +569,133 @@ footer .container section .footer__menu .footer__menu-list .footer__menu-list-it
   padding: 10px;
 }
 
-footer .container .footer__text_1 {
+.footer .container .footer__menu .footer__menu-list .footer__menu-list-item a {
+  color: black;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email {
+  height: 40px;
+  width: 610px;
+  position: relative;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email::-webkit-input-placeholder {
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: black;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email:-ms-input-placeholder {
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: black;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email::-ms-input-placeholder {
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: black;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email::placeholder {
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: black;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email::after {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../../IMAGES/main/SVG/sprite.svg#arrow");
+  fill: black;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email-svg {
+  position: relative;
+  top: 5px;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+  fill: black;
+}
+
+.footer .container .footer__input-wrapper .footer__input-email-text {
+  font-family: "Gramatika-Light";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.footer .container .footer__address-email-link {
+  font-family: "Kudryashev Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.footer .container .footer__socials-list-item {
+  margin-right: 24px;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footer .container .footer__socials-list-item a {
+  color: black;
+}
+
+.footer .container .footer__socials-list-item:last-child {
+  margin-right: 0;
+}
+
+.footer .container .footer__policy {
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer .container .footer__group-text {
+  width: 89px;
+  height: 26px;
+}
+
+.footer .container .footer__text_1 {
   display: inline-block;
   text-align: center;
-  width: 1440px;
+  width: 100%;
   height: 25px;
   font-family: "Gramatika-Light";
   font-style: normal;
@@ -508,10 +709,8 @@ footer .container .footer__text_1 {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid green;
-  width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 @font-face {

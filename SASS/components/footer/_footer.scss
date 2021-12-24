@@ -1,46 +1,154 @@
-footer {
-  background-color: rgb(255, 255, 255);
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1440px;
+
   .container {
     flex-direction: column;
-    section {
-      width: 1440px;
-      height: 602px;
 
-      background-color: rgb(255, 255, 255);
+    height: 602px;
 
-      border: 32px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 32px solid rgb(0, 0, 0);
 
-      .footer__title-svg {
-        width: 407px;
-        height: 101px;
+    .footer__title-svg {
+      width: 407px;
+      height: 101px;
 
-        color: rgb(0, 0, 0);
-      }
+      fill: rgb(0, 0, 0);
 
-      .footer__menu {
-        width: 300px;
+      border: 2px solid blue;
+    }
 
-        .footer__menu-list {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
+    .footer__menu {
+      width: 300px;
 
-          .footer__menu-list-item {
-            justify-content: center;
-            align-items: center;
+      .footer__menu-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-            border-bottom: 2px solid rgb(198, 24, 24);
-            // flex: 1 0 25%;
-            padding: 10px;
+        .footer__menu-list-item {
+          justify-content: center;
+          align-items: center;
+
+          border-bottom: 2px solid rgb(198, 24, 24);
+          // flex: 1 0 25%;
+          padding: 10px;
+
+          a {
+            color: black;
           }
         }
       }
     }
+    .footer__input-wrapper {
+      .footer__input-email {
+        height: 40px;
+        width: 610px;
+        position: relative;
+
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+
+        &::placeholder {
+          font-family: "Kudryashev Headline";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 27px;
+
+          color: rgb(0, 0, 0);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 20;
+
+          width: 32px;
+          height: 32px;
+
+          background-image: url("../../../IMAGES/main/SVG/sprite.svg#arrow");
+          fill: rgb(0, 0, 0);
+        }
+      }
+
+      .footer__input-email-svg {
+        position: relative;
+        top: 5px;
+        right: 40px;
+        width: 32px;
+        height: 32px;
+
+        fill: rgb(0, 0, 0);
+      }
+      .footer__input-email-text {
+        font-family: "Gramatika-Light";
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 120%;
+        /* identical to box height, or 17px */
+
+        letter-spacing: 0.06em;
+
+        color: #000000;
+      }
+    }
+
+    .footer__address-email-link {
+      font-family: "Kudryashev Headline";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 27px;
+
+      color: #000000;
+    }
+
+    .footer__socials-list-item {
+      margin-right: 24px;
+
+      font-family: "Gramatika-Light";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      a {
+        color: rgb(0, 0, 0);
+      }
+    }
+    .footer__socials-list-item:last-child {
+      margin-right: 0;
+    }
+    .footer__policy {
+      font-family: "Gramatika-Light";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+
+    .footer__group-text {
+      width: 89px;
+      height: 26px;
+    }
+
     .footer__text_1 {
       display: inline-block;
       text-align: center;
 
-      width: 1440px;
+      width: 100%;
       height: 25px;
 
       font-family: "Gramatika-Light";

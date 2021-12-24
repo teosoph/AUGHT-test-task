@@ -1,7 +1,9 @@
 header {
   height: 57px;
+  position: absolute;
   left: 0;
   right: 0;
+  z-index: 9;
 
   .container {
     height: 100%;
@@ -9,39 +11,120 @@ header {
   }
   .header__buttons {
     .header__button-menu {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      background-color: Transparent;
+      overflow: hidden;
+      cursor: pointer;
+
       margin-left: 31px;
+
+      width: 40px;
+      height: 10px;
     }
     .header__button-language {
+      display: flex;
+      align-items: center;
+
+      border: none;
+      cursor: pointer;
+      background-color: Transparent;
+
+      font-family: "Gramatika-Light";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: rgb(255, 255, 255);
+
       margin-left: 40px;
+
+      &::after {
+        content: "  ";
+        display: block;
+        background-image: url("../../../IMAGES/main/SVG/CaretDown.svg");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+
+        margin-left: 8px;
+
+        fill: rgb(255, 255, 255);
+      }
     }
   }
   .header__navigation {
     align-items: center;
+
+    .header__navigation-list-item {
+      display: inline;
+      margin-right: 48px;
+    }
+    .header__navigation-list-item:last-child {
+      margin-right: 0px;
+    }
+
+    .header__navigation-list-item a {
+      height: 100%;
+
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+
+      font-family: "Gramatika-Light";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 120%;
+
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: rgb(255, 255, 255);
+    }
   }
-  .header__navigation-list-item {
-    display: inline;
-    margin-right: 48px;
+
+  .header__input-search {
+    background-color: transparent;
+    border: 0;
+
+    margin-right: 32px;
+
+    &::placeholder {
+      font-family: "Gramatika-Light";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: rgb(255, 255, 255);
+    }
+
+    &::after {
+      content: "  ";
+      display: block;
+      background-image: url("../../../IMAGES/main/SVG/zoomOut.svg");
+      background-repeat: no-repeat;
+      width: 11px;
+      height: 11px;
+
+      fill: rgb(255, 255, 255);
+    }
   }
-  .header__navigation-list-item:last-child {
-    margin-right: 0px;
-  }
+  .header__input-search-svg {
+    fill: rgb(255, 255, 255);
+    border: 3px solid red;
 
-  .header__navigation-list-item a {
-    height: 100%;
-
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-
-    font-family: "Gramatika-Light";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 120%;
-
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
   }
 }

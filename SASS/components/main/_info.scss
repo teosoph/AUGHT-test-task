@@ -1,6 +1,4 @@
 .main__info {
-  // width: 1440px;
-
   flex-direction: column;
 
   margin-left: auto;
@@ -72,7 +70,7 @@
     }
 
     .main__info-selebrities-cards_1 {
-      width: 1440px;
+      // width: 1440px;
       height: 1680px;
 
       border: 3px solid rgb(179, 38, 38);
@@ -80,7 +78,7 @@
       .main__info-selebrities-card_1 {
         border: 3px solid rgb(124, 252, 0);
 
-        width: 541px;
+        // width: 541px;
         height: 795px;
       }
       .main__info-selebrities-card_2,
@@ -94,16 +92,24 @@
         height: 486px;
       }
     }
+
+    //  Main Hero_2 ==========================
     .main__hero_2 {
-      width: 1440px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       height: 744px;
+      // width: 1440px;
 
       background-image: url(../../../IMAGES/main/IMG/irina.jpg);
 
+      background-repeat: no-repeat;
       border: 3px solid rgb(226, 198, 39);
     }
+
+    // Main info selebrities cards_2 ========================
     .main__info-selebrities-cards_2 {
-      width: 1440px;
+      // width: 1440px;
       height: 1680px;
 
       border: 3px solid rgb(179, 38, 38);
