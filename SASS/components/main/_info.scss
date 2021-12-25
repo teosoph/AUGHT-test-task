@@ -1,4 +1,6 @@
 .main__info {
+  position: relative;
+
   flex-direction: column;
 
   margin-left: auto;
@@ -7,9 +9,11 @@
   background-color: rgb(255, 255, 255);
 
   .main__info-text_1 {
+    padding: 0 7px 0 7px;
+    display: flex;
+    align-items: center;
+
     margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
 
     height: 27px;
 
@@ -17,8 +21,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 120%;
-    letter-spacing: 15em;
+    letter-spacing: 8.4em;
     text-transform: uppercase;
 
     color: rgb(15, 13, 13);
@@ -70,24 +73,48 @@
     }
 
     .main__info-selebrities-cards_1 {
-      // width: 1440px;
       height: 1680px;
 
-      border: 3px solid rgb(179, 38, 38);
-
       .main__info-selebrities-card_1 {
-        border: 3px solid rgb(124, 252, 0);
+        position: absolute;
+        top: 3%;
+        left: 3%;
 
-        // width: 541px;
-        height: 795px;
+        width: 541px;
+        height: 830px;
       }
+      .main__info-selebrities-card_2 {
+        position: absolute;
+        top: 3%;
+        right: 22%;
+      }
+      .main__info-selebrities-card_3 {
+        position: absolute;
+        top: 3%;
+        right: 3%;
+      }
+      .main__info-selebrities-card_4 {
+        position: absolute;
+        left: 20%;
+        top: 25%;
+      }
+      .main__info-selebrities-card_5 {
+        position: absolute;
+        left: 39%;
+        top: 25%;
+      }
+
+      .main__info-selebrities-card_6 {
+        position: absolute;
+        right: 3%;
+        top: 25%;
+      }
+
       .main__info-selebrities-card_2,
       .main__info-selebrities-card_3,
       .main__info-selebrities-card_4,
       .main__info-selebrities-card_5,
       .main__info-selebrities-card_6 {
-        border: 3px solid rgb(124, 252, 0);
-
         width: 263px;
         height: 486px;
       }
@@ -99,34 +126,58 @@
       margin-left: auto;
       margin-right: auto;
       height: 744px;
-      // width: 1440px;
 
       background-image: url(../../../IMAGES/main/IMG/irina.jpg);
 
       background-repeat: no-repeat;
-      border: 3px solid rgb(226, 198, 39);
     }
 
     // Main info selebrities cards_2 ========================
     .main__info-selebrities-cards_2 {
-      // width: 1440px;
+      position: relative;
       height: 1680px;
 
-      border: 3px solid rgb(179, 38, 38);
+      .main__info-selebrities-card_7 {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+      }
+      .main__info-selebrities-card_8 {
+        position: absolute;
+        top: 5%;
+        left: 22%;
+      }
+      .main__info-selebrities-card_9 {
+        position: absolute;
+        top: 5%;
+        right: 3%;
+      }
+      .main__info-selebrities-card_10 {
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+      }
+      .main__info-selebrities-card_11 {
+        position: absolute;
+        bottom: 10%;
+        right: 32%;
+      }
+
+      .main__info-selebrities-card_12 {
+        position: absolute;
+        bottom: 10%;
+        right: 13%;
+      }
 
       .main__info-selebrities-card_7,
       .main__info-selebrities-card_8,
       .main__info-selebrities-card_10,
       .main__info-selebrities-card_11,
       .main__info-selebrities-card_12 {
-        border: 3px solid rgb(124, 252, 0);
-
         width: 263px;
         height: 486px;
       }
       .main__info-selebrities-card_9 {
-        border: 3px solid rgb(124, 252, 0);
-
         width: 541px;
         height: 795px;
       }
@@ -134,8 +185,13 @@
   }
   .main__hero_2 {
     color: rgb(255, 255, 255);
+    position: relative;
 
     .main__hero_2-text_1 {
+      position: absolute;
+      top: 1%;
+      left: 3%;
+
       display: inline-block;
 
       font-family: "Kudryashev Headline";
@@ -145,6 +201,10 @@
       line-height: 83px;
     }
     .main__hero_2-text_2 {
+      position: absolute;
+      top: 1%;
+      right: 5%;
+
       display: inline-block;
       text-align: right;
 
@@ -158,6 +218,10 @@
       line-height: 83px;
     }
     .main__hero_2-text_3 {
+      position: absolute;
+      top: 30%;
+      left: 3%;
+
       display: inline-block;
 
       width: 258px;
@@ -172,9 +236,17 @@
       letter-spacing: 0.06em;
     }
     .main__hero_2-text_4 {
+      position: absolute;
+      bottom: 5%;
+      left: 3%;
+
       display: inline-block;
     }
     .main__hero_2-text_5 {
+      position: absolute;
+      bottom: 3%;
+      right: 3%;
+
       display: inline-block;
     }
   }
