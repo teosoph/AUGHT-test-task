@@ -5,6 +5,7 @@
   width: 1440px;
 
   .container {
+    position: relative;
     flex-direction: column;
 
     height: 602px;
@@ -13,16 +14,22 @@
     border: 32px solid rgb(0, 0, 0);
 
     .footer__title-svg {
+      position: absolute;
+      top: 5%;
+      left: 3%;
+
       width: 407px;
       height: 101px;
 
       fill: rgb(0, 0, 0);
-
-      border: 2px solid blue;
     }
 
     .footer__menu {
-      width: 300px;
+      position: absolute;
+      right: 3%;
+      top: 5%;
+
+      width: 400px;
 
       .footer__menu-list {
         display: flex;
@@ -33,17 +40,31 @@
           justify-content: center;
           align-items: center;
 
-          border-bottom: 2px solid rgb(198, 24, 24);
-          // flex: 1 0 25%;
           padding: 10px;
 
+          margin-right: 20px;
+
           a {
-            color: black;
+            font-family: "Gramatika-Light";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+
+            color: #000000;
           }
         }
       }
     }
     .footer__input-wrapper {
+      position: absolute;
+
+      left: 3%;
+      top: 40%;
+
       .footer__input-email {
         height: 40px;
         width: 610px;
@@ -89,8 +110,7 @@
         font-style: italic;
         font-weight: normal;
         font-size: 14px;
-        line-height: 120%;
-        /* identical to box height, or 17px */
+        line-height: 17px;
 
         letter-spacing: 0.06em;
 
@@ -99,6 +119,10 @@
     }
 
     .footer__address-email-link {
+      position: absolute;
+      left: 3%;
+      bottom: 15%;
+
       font-family: "Kudryashev Headline";
       font-style: normal;
       font-weight: normal;
@@ -107,26 +131,35 @@
 
       color: #000000;
     }
+    .footer__wraper-social-links {
+      position: absolute;
+      left: 3%;
+      bottom: 5%;
 
-    .footer__socials-list-item {
-      margin-right: 24px;
+      .footer__socials-list-item {
+        margin-right: 24px;
 
-      font-family: "Gramatika-Light";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 17px;
+        font-family: "Gramatika-Light";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
 
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      a {
-        color: rgb(0, 0, 0);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        a {
+          color: rgb(0, 0, 0);
+        }
+      }
+      .footer__socials-list-item:last-child {
+        margin-right: 0;
       }
     }
-    .footer__socials-list-item:last-child {
-      margin-right: 0;
-    }
     .footer__policy {
+      position: absolute;
+      left: 45%;
+      bottom: 2%;
+
       font-family: "Gramatika-Light";
       font-style: normal;
       font-weight: normal;
@@ -140,15 +173,21 @@
     }
 
     .footer__group-text {
+      position: absolute;
+      right: 3%;
+      bottom: 3%;
+
       width: 89px;
       height: 26px;
     }
 
     .footer__text_1 {
+      position: absolute;
+      bottom: -10%;
       display: inline-block;
       text-align: center;
 
-      width: 100%;
+      width: 1440px;
       height: 25px;
 
       font-family: "Gramatika-Light";

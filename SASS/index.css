@@ -186,17 +186,15 @@ header .header__input-search::placeholder {
 header .header__input-search::after {
   content: "  ";
   display: block;
-  background-image: url("../../../IMAGES/main/SVG/Zoom-01.svg");
+  background-image: url("../../../IMAGES/main/SVG/zoomOut.svg");
   background-repeat: no-repeat;
   width: 11px;
   height: 11px;
   fill: white;
-  border: 3px solid #06f89b;
 }
 
 header .header__input-search-svg {
   fill: white;
-  border: 3px solid red;
   width: 50px;
   height: 50px;
 }
@@ -627,6 +625,7 @@ header .header__input-search-svg {
 }
 
 .footer .container {
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -637,14 +636,19 @@ header .header__input-search-svg {
 }
 
 .footer .container .footer__title-svg {
+  position: absolute;
+  top: 5%;
+  left: 3%;
   width: 407px;
   height: 101px;
   fill: black;
-  border: 2px solid blue;
 }
 
 .footer .container .footer__menu {
-  width: 300px;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  width: 400px;
 }
 
 .footer .container .footer__menu .footer__menu-list {
@@ -665,12 +669,25 @@ header .header__input-search-svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2px solid #c61818;
   padding: 10px;
+  margin-right: 20px;
 }
 
 .footer .container .footer__menu .footer__menu-list .footer__menu-list-item a {
-  color: black;
+  font-family: "Gramatika-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer .container .footer__input-wrapper {
+  position: absolute;
+  left: 3%;
+  top: 40%;
 }
 
 .footer .container .footer__input-wrapper .footer__input-email {
@@ -742,13 +759,15 @@ header .header__input-search-svg {
   font-style: italic;
   font-weight: normal;
   font-size: 14px;
-  line-height: 120%;
-  /* identical to box height, or 17px */
+  line-height: 17px;
   letter-spacing: 0.06em;
   color: #000000;
 }
 
 .footer .container .footer__address-email-link {
+  position: absolute;
+  left: 3%;
+  bottom: 15%;
   font-family: "Kudryashev Headline";
   font-style: normal;
   font-weight: normal;
@@ -757,7 +776,13 @@ header .header__input-search-svg {
   color: #000000;
 }
 
-.footer .container .footer__socials-list-item {
+.footer .container .footer__wraper-social-links {
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+}
+
+.footer .container .footer__wraper-social-links .footer__socials-list-item {
   margin-right: 24px;
   font-family: "Gramatika-Light";
   font-style: normal;
@@ -768,15 +793,18 @@ header .header__input-search-svg {
   text-transform: uppercase;
 }
 
-.footer .container .footer__socials-list-item a {
+.footer .container .footer__wraper-social-links .footer__socials-list-item a {
   color: black;
 }
 
-.footer .container .footer__socials-list-item:last-child {
+.footer .container .footer__wraper-social-links .footer__socials-list-item:last-child {
   margin-right: 0;
 }
 
 .footer .container .footer__policy {
+  position: absolute;
+  left: 45%;
+  bottom: 2%;
   font-family: "Gramatika-Light";
   font-style: normal;
   font-weight: normal;
@@ -788,14 +816,19 @@ header .header__input-search-svg {
 }
 
 .footer .container .footer__group-text {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
   width: 89px;
   height: 26px;
 }
 
 .footer .container .footer__text_1 {
+  position: absolute;
+  bottom: -10%;
   display: inline-block;
   text-align: center;
-  width: 100%;
+  width: 1440px;
   height: 25px;
   font-family: "Gramatika-Light";
   font-style: normal;
